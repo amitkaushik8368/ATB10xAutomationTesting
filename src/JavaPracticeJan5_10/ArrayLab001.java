@@ -27,7 +27,8 @@ public class ArrayLab001 {
         int pivot = array[high]; // Choose the last element as the pivot
         int i = low - 1; // Pointer for elements smaller than the pivot
         for (int j = low; j < high; j++) {
-            if (array[j] <= pivot) {
+            if (array[j] <= pivot)
+            {
                 i++; // Move the pointer
                 // Swap array[i] and array[j]
                 int temp = array[i];
