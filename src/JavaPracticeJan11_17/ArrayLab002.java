@@ -1,5 +1,7 @@
 package JavaPracticeJan11_17;
-
+/*
+Java program to reverse an array
+ */
 import java.util.Arrays;
 
 public class ArrayLab002 {
