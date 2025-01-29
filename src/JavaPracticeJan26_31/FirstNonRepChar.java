@@ -20,14 +20,17 @@ for(int i=0; i<len;i++){
 public class FirstNonRepChar {
     public static void main(String[] args) {
 
-        String input = "aabbcc";
+        String input = "automation";
+        boolean[] dec = new boolean[input.length()];
 
         for (int i = 0; i < input.length(); i++) {
             boolean decide = false;
+            if (dec[i]) continue;
             for (int j = i+1; j < input.length(); j++) {
                 if (input.charAt(i) == input.charAt(j)) {
+                    dec[j] = true;
                     decide = true;
-                    break;
+
                 }
             }
             if (!decide){
