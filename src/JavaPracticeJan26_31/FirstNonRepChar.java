@@ -18,29 +18,30 @@ for(int i=0; i<len;i++){
 
  */
 public class FirstNonRepChar {
-    public static void main(String[] args) {
-
-        String input = "automation";
+    public static void main(String[] args)
+    {
+        String input = "aabbccddg";
         boolean[] dec = new boolean[input.length()];
-
-        for (int i = 0; i < input.length(); i++) {
-            boolean decide = false;
+        boolean decide = false;
+        for (int i = 0; i < input.length(); i++)
+        {
             if (dec[i]) continue;
-            for (int j = i+1; j < input.length(); j++) {
-                if (input.charAt(i) == input.charAt(j)) {
+            decide = false;
+
+            for (int j = i+1; j < input.length(); j++)
+            {
+                if (input.charAt(i) == input.charAt(j))
+                {
                     dec[j] = true;
                     decide = true;
-
                 }
             }
-            if (!decide){
+            if (!decide)
+            {
                 System.out.println("First non-repetitive char is '" + input.charAt(i) + "'");
                 break;
             }
-
         }
-
-
-
+        if(decide) System.out.println("No repetitive character");
     }
 }
