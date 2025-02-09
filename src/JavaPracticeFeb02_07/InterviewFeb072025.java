@@ -9,7 +9,7 @@ package JavaPracticeFeb02_07;
 
 public class InterviewFeb072025 {
     public static void main(String[] args) {
-        String input = "banana**";
+        String input = "Amit Sharma is an Automation Tester";
         String lowerInput = input.toLowerCase();
         System.out.println(lowerInput);
         boolean[] decide = new boolean[input.length()];
