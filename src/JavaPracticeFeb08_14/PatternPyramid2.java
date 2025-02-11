@@ -33,6 +33,10 @@ public class PatternPyramid2 {
             System.out.println();
 
         }
+        for (int i = 0; i < height; i++) {
+            System.out.print(" ".repeat(height - i - 1)); // Print leading spaces
+            System.out.println("*".repeat(i + 1)); // Print stars
+        }
 
 
     }
