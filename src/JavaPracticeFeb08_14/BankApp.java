@@ -6,6 +6,8 @@ public class BankApp {
         BankAccount customer2 = new BankAccount("Amit Sharma", 123456789L, 2000.00F);  // Constructor Overloading
 
         BankAccount customer3 = new BankAccount("Shubham Sharma", 12345678L,4.0F);
+        new BankAccount("Ragini Sharma", 12045678L,2.0F);
+
         customer2.depositAmount(500.00F);
         customer2.displayBalance();
         customer2.withdrawAmount(2000.00f);
