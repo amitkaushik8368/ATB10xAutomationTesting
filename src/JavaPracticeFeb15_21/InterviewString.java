@@ -1,6 +1,9 @@
 package JavaPracticeFeb15_21;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 public class InterviewString
 {
@@ -30,7 +33,18 @@ public class InterviewString
             if (ch == ' ') continue;
             hashMap.put(ch, hashMap.getOrDefault(ch,0) +1 );
         }
-        System.out.println(hashMap);
+        StringBuilder stringBuilder = new StringBuilder();
+        for (char c:chars)
+        {
+            if(c == ' ') stringBuilder.append(' ');
+            stringBuilder.append(hashMap.get(c));
+        }
+        System.out.println(stringBuilder);
+//        ArrayList<String> resultString = new ArrayList<>();
+//        for (char c:chars)
+//        {
+//            resultString.add(hashMap.get(c));
+//        }
     }
 
 
