@@ -55,6 +55,7 @@ public class InterviewString
     static void usingNestedForLoop(String str)
     //  str = "amit is a tester";
     {
+        int x = 10;
         boolean[] dupCharProcessed = new boolean[str.length()];
         for (int i = 0; i < str.length(); i++)
         {
