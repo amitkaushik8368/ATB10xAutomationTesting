@@ -26,6 +26,7 @@ public class InterviewString
     static void usingHashmap(String str)
     //str = "amit is an automation tester";
     {
+        int y;
         HashMap<Character, Integer> hashMap = new HashMap<>();
         char[] chars = str.toCharArray();
         for (char ch : chars)
@@ -42,12 +43,8 @@ public class InterviewString
                 stringBuilder.append(hashMap.get(c));
         }
         System.out.println(stringBuilder);
-//        ArrayList<String> resultString = new ArrayList<>();
-//        for (char c:chars)
-//        {
-//            resultString.add(hashMap.get(c));
-//        }
-    }
+     }
+
 
 
 
