@@ -8,7 +8,7 @@ import java.util.Set;
 public class InterviewString
 {
     public static void main(String[] args) {
-        String str = "Amit is an automation Tester";
+        String str = "I will definitely take the new Job";
         String lowerStr = str.toLowerCase();
         usingNestedForLoop(lowerStr);
         usingHashmap(lowerStr);
@@ -36,8 +36,10 @@ public class InterviewString
         StringBuilder stringBuilder = new StringBuilder();
         for (char c:chars)
         {
-            if(c == ' ') stringBuilder.append(' ');
-            stringBuilder.append(hashMap.get(c));
+            if(c == ' ')
+                stringBuilder.append(" ");
+            else
+                stringBuilder.append(hashMap.get(c));
         }
         System.out.println(stringBuilder);
 //        ArrayList<String> resultString = new ArrayList<>();
