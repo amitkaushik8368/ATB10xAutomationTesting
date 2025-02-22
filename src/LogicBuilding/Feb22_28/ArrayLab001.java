@@ -15,6 +15,7 @@ public class ArrayLab001
         int[] input = {1,2,3,4,5,6,7};
         for (int i=0; i<3; i++)
         {
+            int y;
             int temp = input[input.length-1];
             for (int j=0; j< input.length-1; j++)
             {
