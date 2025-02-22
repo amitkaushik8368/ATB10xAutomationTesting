@@ -19,7 +19,8 @@ class Maharashtra extends StatesOf_India
 {
 
     @Override
-    void language() {
+    void language()
+    {
         System.out.println("My native language is Marathi");
     }
 }
