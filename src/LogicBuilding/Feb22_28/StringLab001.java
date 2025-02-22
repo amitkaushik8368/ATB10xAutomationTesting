@@ -4,7 +4,7 @@ package LogicBuilding.Feb22_28;
 public class StringLab001
 {
     public static void main(String[] args) {
-        String input = "2hr 5min 6s 10ms";
+        String input = "1hr 5min 6s 10ms";
         String[] inputArray = input.split(" ");
         Integer hours=0, minutes = 0, seconds = 0, miliSeconds = 0;
 
