@@ -5,6 +5,18 @@ import java.util.*;
 
 public class TestDemo
 {
+    public static void main(String[] args) {
+        List l = List.of("Mango", "Banana");
+        List<Integer> l1 = new ArrayList<>();
+        Iterator iterator = l.iterator();
+       //l.add("Cherry");    not allowed
+
+        for (Object o : l)
+        {
+            System.out.println(o);
+        }
+
+    }
 
 }
 
