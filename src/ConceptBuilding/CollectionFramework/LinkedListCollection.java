@@ -13,7 +13,7 @@ public class LinkedListCollection
         list.add(2);
         list.add(8);
         list.add(10);
-        System.out.println(list);
+        System.out.println(list.get(2));
         Collections.sort(list);
         System.out.println(list);
 

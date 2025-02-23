@@ -3,6 +3,7 @@ package ConceptBuilding.CollectionFramework;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 public class ListCollections {
 
@@ -19,6 +20,10 @@ public class ListCollections {
         List list = List.of(str);   //List.of is Static Method implements in List interface
 
         System.out.println(list.contains("Amit"));
+
+        ListIterator listIterator = list.listIterator();
+
+        System.out.println(listIterator.next());
 
 //        Iterator iterator = list.iterator();
 //        while(iterator.hasNext())
