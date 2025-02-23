@@ -17,9 +17,9 @@ public class ArrayLab001
         {
             int y;
             int temp = input[input.length-1];
-            for (int j=0; j< input.length-1; j++)
+            for (int j=input.length-1; j>0 ; j--)
             {
-                input[j+1] = input[j];
+                input[j] = input[j-1];
             }
             input[0] = temp;
             System.out.println(Arrays.toString(input));
