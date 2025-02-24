@@ -12,17 +12,20 @@ public class ArrayLab001
 */
 
     public static void main(String[] args) {
-        int[] input = {1,2,3,4,5,6,7};
+        int[] input = {1,2,3,4,5,6, 7};
         for (int i=0; i<3; i++)
         {
-            int y;
+
             int temp = input[input.length-1];
             for (int j=input.length-1; j>0 ; j--)
             {
                 input[j] = input[j-1];
+                System.out.println(Arrays.toString(input));
             }
+            System.out.println("-------------------");
             input[0] = temp;
             System.out.println(Arrays.toString(input));
+            System.out.println("-----------------------");
         }
     }
 }
