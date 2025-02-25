@@ -12,8 +12,7 @@ public class PrimitiveNonPrimitive
         /*
         Delete an element from an ArrayList
          */
-
-        Integer[] integers = new Integer[5];
+       // Integer[] integers = new Integer[]{1, 2, 3, 4, 5};
 
 
         List<Integer> list = new ArrayList<>(Arrays.asList(5, 15, 25, 35, 45, 55));
