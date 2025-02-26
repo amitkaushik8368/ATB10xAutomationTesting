@@ -17,5 +17,7 @@ public class ListIterator1 {
         System.out.println("-----------");
         System.out.println(listIterator.previous());
 
+        int x;
+
     }
 }
