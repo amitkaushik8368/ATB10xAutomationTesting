@@ -2,7 +2,6 @@ package LogicBuilding.March01_07;
 
 public class FactorialRecursion
 {
-
     public static void main(String[] args)
     {
         int num = 17;
