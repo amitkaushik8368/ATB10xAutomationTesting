@@ -20,7 +20,8 @@ public class FabonnacciSeries1
 
         int x=1, y=1, n=0;
         while (n<10)
-        {
+        {int a;
+
 
             System.out.print(x + ", " + y + ", ");
             x=x+y;
