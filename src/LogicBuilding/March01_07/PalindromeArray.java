@@ -8,7 +8,7 @@ public class PalindromeArray
          */
 
 
-        int[] array = {1, 1, 1};
+        int[] array = {1, 2, 1, 2, 1};
 
         int begin = 0, end = array.length-1;
         while (begin<end)
