@@ -11,7 +11,7 @@ public class MergeArrayCollection {
         ArrayList<Integer> mergedArray = new ArrayList<>(Arrays.asList(array1));
         System.out.println(mergedArray);
 
-        mergedArray.addAll(array2);
+      //  mergedArray.addAll(array2);
 
 
     }
