@@ -8,6 +8,7 @@ public class SecondMaxSecondMin
         large=small=array[0];
         int secondLarge, secondSmall;
         secondSmall = secondLarge = 0;
+        int y;
 
         for (int num:array)
         {
