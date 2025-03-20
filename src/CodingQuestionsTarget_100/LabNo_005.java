@@ -23,13 +23,8 @@ public class LabNo_005
                 if (input.charAt(i) == input.charAt(j))
                 {
                     System.out.println(i + " " + j);
-
-
-                        arrayList.add(i);
-                        arrayList.add(j);
-
-
-
+                    arrayList.add(i);
+                    arrayList.add(j);
                 }
             }
         }
