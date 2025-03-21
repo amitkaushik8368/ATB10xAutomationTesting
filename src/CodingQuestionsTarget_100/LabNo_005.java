@@ -18,11 +18,10 @@ public class LabNo_005
         {
             for(int j=input.length()-1; j>i; j--)
             {
-                System.out.println(i + " " + j);
-                System.out.println("__________________");
+
                 if (input.charAt(i) == input.charAt(j))
                 {
-                    System.out.println(i + " " + j);
+                  
                     arrayList.add(i);
                     arrayList.add(j);
                 }
