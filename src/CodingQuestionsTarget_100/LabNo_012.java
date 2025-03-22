@@ -27,11 +27,5 @@ public class LabNo_012
             System.out.print(" ".repeat(count--) + "*".repeat(i));
             System.out.println();
         }
-
-
-
-
-
-
     }
 }
