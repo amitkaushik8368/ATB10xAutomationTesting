@@ -21,6 +21,7 @@ public class LabNo_025
         for (char i = 0 ; i <= 127; i++)
         {
             int j = i;
+            int q;
             System.out.println(j + "      " + i);
         }
 
