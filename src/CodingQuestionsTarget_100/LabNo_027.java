@@ -1,7 +1,9 @@
+package CodingQuestionsTarget_100;
+
 import java.util.HashMap;
 import java.util.Map;
 
-public class April03
+public class LabNo_027
 {
     public static void main(String[] args)
     {
