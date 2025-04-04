@@ -16,7 +16,6 @@ public class LabNo_031
         while (i<prints)
         {
             i++;
-
             System.out.print(x + " ");
             int temp = x;
             x=y;
