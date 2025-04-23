@@ -20,6 +20,10 @@ public class Lab_No_070
             System.out.println("Palindrome String");
         }else System.out.println("No Palindrome String");
 
+        String str = "Amit Sharma";
+
+
+
 
     }
 }
