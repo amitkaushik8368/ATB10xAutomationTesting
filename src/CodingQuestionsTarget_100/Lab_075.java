@@ -12,9 +12,15 @@ public class Lab_075
         int x = scanner.nextInt();
         scanner.close();
 
-        if (x%2!=0 || x%3!=0 || x%5!=0 || x%7!=0)
+        for (int i = 2 ; i<= Math.sqrt(x); i++)
         {
-            System.out.println("The number is not prime");
-        } else System.out.println("The number is Prime");
+            if (x%i == 0)
+            {
+                System.out.println("number is not prime");
+                return;
+            }
+
+        }
+        System.out.println("Number is prime");
     }
 }
