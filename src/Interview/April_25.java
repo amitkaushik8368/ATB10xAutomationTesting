@@ -14,20 +14,18 @@ public class April_25
         String name1 = "suresh vemula";
 
         Character[] characters = new Character[name1.length()];
+        Arrays.setAll(characters, name1::charAt);
 
-        for (int i=0; i< name1.length(); i++)
-        {
-            characters[i] = name1.charAt(i);
-        }
+//        for (int i=0; i< name1.length(); i++)
+//        {
+//            characters[i] = name1.charAt(i);
+//        }
 
 
 
         Set<Character> set = new LinkedHashSet<>();
 
-        for (Character ch : characters)
-        {
-            set.add(ch);
-        }
+        Collections.addAll(set, characters);
         System.out.println(set);
 
 
