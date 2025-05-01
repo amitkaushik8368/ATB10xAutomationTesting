@@ -1,51 +1,20 @@
 package CodingQuestionsTarget_100;
 
-import java.util.HashMap;
-import java.util.Map;
-
+import java.util.ArrayList;
+import java.util.List;
 public class Lab_088
 {
+    static List<String> collectSubPalindromes = new ArrayList<>();
     public static void main(String[] args) {
-
-        String input = "abbadad";
-
-        Map<Integer, Integer> evenMap = new HashMap<>();
-        Map<Integer, Integer> oddMap = new HashMap<>();
-        int largestEvenSubstringPalindrome = 0;
-        int largestOddSubstringPalindrome = 0;
+        String input = "abbadada";
         for (int i = 0; i< input.length(); i++)
         {
-            int tempEvenPalindrome = palindromeSubstringLength(input, i, i+1);
-
-            if (tempEvenPalindrome>largestEvenSubstringPalindrome)
-                largestEvenSubstringPalindrome=tempEvenPalindrome;
-
-            evenMap.put(i, tempEvenPalindrome);
-
-            int tempOddPalindrome = palindromeSubstringLength(input, i, i);
-
-            if (tempOddPalindrome>largestOddSubstringPalindrome)
-                largestOddSubstringPalindrome=tempOddPalindrome;
-
-            oddMap.put(i, tempOddPalindrome);
+            palindromeSubstringLength(input, i, i+1);
+            palindromeSubstringLength(input, i, i);
         }
-
-        System.out.println("Odd Map" + oddMap);
-        System.out.println("Even Map " + evenMap);
-
-        System.out.println("______________");
-
-        System.out.println(largestOddSubstringPalindrome);
-
-        System.out.println("____________");
-        System.out.println(largestEvenSubstringPalindrome);
-
-
-
+        getLongestSubString();
     }
-
-
-    static int palindromeSubstringLength(String str, int left, int right)
+    static void palindromeSubstringLength(String str, int left, int right)
     {
 
         while ( ( left>=0 && right < str.length() )  && str.charAt(left) == str.charAt(right) )
@@ -53,7 +22,28 @@ public class Lab_088
             left--;
             right++;
         }
+        palindromeString(str.substring(left+1, right));
+    }
 
-        return  right-(left+1);
+    static void palindromeString(String str) {
+        collectSubPalindromes.add(str);
+    }
+
+    static void getLongestSubString()
+    {
+
+        String longestString = null;
+        int length = 0;
+
+        for (String s : collectSubPalindromes)
+        {
+            if (s.length()>length)
+            {
+                longestString = s;
+                length = s.length();
+            }
+        }
+
+        System.out.println(longestString);
     }
 }
